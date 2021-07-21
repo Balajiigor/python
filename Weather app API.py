@@ -14,7 +14,7 @@ def GetWeather(master):
     main_info = city + "\n"+ weather + "\n" + str(temp)
     sub_info = "\n" + "Min temp: " + str(temp_min) + "\n" +"Max temp: " + str(temp_min) + "\n" + "Humidity: " + str(humidity)
 
-    Label1.config(text = main_info)
+    Label1.config(text = main_info.upper())
     Label2.config(text=sub_info)
     print(main_info)
     print(sub_info)
